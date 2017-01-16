@@ -27,7 +27,7 @@ void levelFourDraw(){
   //player
   player.display();
   player.move();
-  player.washBack();
+
   
   for(int i=0;i<onField;i++){
     player.OnCollision(colorBall[i]);

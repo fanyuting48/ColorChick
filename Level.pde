@@ -1,11 +1,34 @@
 class Level{
-  int r,g,b;
+  int r,g,b;  
+  int washX, washY;
   
   Level(){
     r = 0;
     g = 0;
     b = 0;
   }
+  
+  
+  void setWashBack(int x, int y){
+    washX= x;
+    washY= y;
+    image(washBack,washX,washY,40,40);
+    
+    float playerTouchWashBack = dist(player.x, player.y, this.washX+20, this.washY+20);
+    
+    if(playerTouchWashBack<20){
+      if(player.initR != r || player.initG != g || player.initB != b){
+        player.r = player.initR;
+        player.g = player.initG;
+        player.b = player.initB; 
+        this.washX=1000;
+        this.washY=1000;
+        }
+    }
+  }
+  
+
+  
   void show(int colorIndex, int levelNum){
     r = colorTable[colorIndex][0];
     g = colorTable[colorIndex][1];

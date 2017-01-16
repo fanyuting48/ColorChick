@@ -23,11 +23,13 @@ void levelOneSet(){
 void levelOneDraw(){
   //background
   level.show(pink2,1);
-  
+  level.setWashBack(200,200);
+  level.setWashBack(400,400);
+
   //player
   player.display();
   player.move();
-  player.washBack();
+
   //player.goToNextLevel(level);
   for(int i=0;i<blockNum;i++){
     player.OnCollision(blockBall[i]);

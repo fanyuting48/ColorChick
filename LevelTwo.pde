@@ -32,7 +32,7 @@ void levelTwoDraw(){
   //player
   player.display();
   player.move();
-  player.washBack();
+
   //player.goToNextLevel(level);
   for(int i=0;i<onField;i++){
     player.OnCollision(colorBall[i]);

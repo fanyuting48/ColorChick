@@ -34,7 +34,7 @@ void levelThreeDraw(){
   //player
   player.display();
   player.move();
-  player.washBack();
+
   //player.goToNextLevel(level);
   for(int i=0;i<blockNum;i++){
     player.OnCollision(blockBall[i]);

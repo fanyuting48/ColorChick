@@ -6,6 +6,8 @@ void initLevel(int sum, int target, int nowOn,  int Color){
   targetColor = Color;
   colorIndex = onField;
   
+  washBack =loadImage("img/washback.png");
+  
   //generat the ball color list
   generateBallIndex(totalBall,targetBall,onField,targetColor);
 }

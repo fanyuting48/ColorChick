@@ -11,6 +11,7 @@ PImage main1;
 PImage main2;
 PImage startPress1;
 PImage startPress2;
+PImage washBack;
 
 Movie opening;
 Movie intoBall;
@@ -130,7 +131,7 @@ void setup(){
   player.x= 50;
   player.y= 240;
   levelOneSet();
-  
+  levelState=LEVEL_RED;
 }
 
 void movieEvent(Movie m) {

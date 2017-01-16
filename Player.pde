@@ -121,15 +121,6 @@ class Player{
     return false;
   }
   
-  void washBack(){
-    if(x<90){
-      if(initR != r || initG != g || initB != b){
-        r = initR;
-        g = initG;
-        b = initB;
-      }
-    }
-  }
   
   void OnCollision(BlockBall target){
     float distance = dist(x,y,target.x,target.y);
